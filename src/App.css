@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 body{
   font-family: 'nanumsquare';
 }
@@ -25,18 +21,36 @@ body{
   background-size: cover; /* 핵심코드 */
   position: relative; /* 핵심코드 */
   display : inline-block;
-  margin-top: 10px;
-  margin-bottom: 5%;
   max-width: 100%;
   background-repeat :no-repeat;
+  
 }
 
 .banner-txt {
   position: absolute; /* 핵심코드 */
-  top: 50%; /* 핵심코드 */
-  left: 50%; /* 핵심코드 */
-  transform: translate( -50%, -50%); /* 핵심코드 */
-  font-size: x-large;
+  top: 60%; /* 핵심코드 */
+  left: 25%; /* 핵심코드 */
+  transform: translate( -100%, -100%); /* 핵심코드 */
+  text-align: left;
+  vertical-align: middle;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.banner2 {
+  width: 800px;
+  height: 900px;
+  background-image: url(/public/img/aa.jfif);
+  background-size: cover; /* 핵심코드 */
+  position: relative; /* 핵심코드 */
+
+}
+.banner-txt2 {
+  position: relative; /* 핵심코드 */
+  top: 60%; /* 핵심코드 */
+  left: 100%; /* 핵심코드 */
+  transform: translate( -100%, -100%); /* 핵심코드 */
+  text-align: left;
+  color: rgb(25, 0, 255);
 }
 
 @media (prefers-reduced-motion: no-preference) {
