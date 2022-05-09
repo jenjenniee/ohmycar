@@ -1,20 +1,30 @@
-.App {
-  text-align: center;
-}
-
-body{
+body {
+  margin: 0;
+  overflow-y: hidden;
   font-family: 'nanumsquare';
 }
-.nav{
+/* .nav{
   background: rgb(255, 255, 255);
   display: flex;
   color: rgb(57, 79, 153);
   padding: 20px;
   font-size: 20px;
   font-weight: 600;
+} */
+.outer {
+  height: 100vh;
+  overflow-y: auto;
 }
-.main{
-  height: 1000px;
+
+.inner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.main-1 {
   background-image: url(/public/img/night_m3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -23,37 +33,38 @@ body{
   padding-top: 1px;
 }
 .main-txt{
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   font-size: 50px;
-  margin-top: 20rem;
-  font-weight: 400;
   line-height: 60%;
+  text-align: center;
   
 }
+.main-2 {
+  background-color: #b6d8f2;
+}
+.banner-txt1 {
+  font-size: x-large;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
 
-.banner {
+.main-3 {
   width: 100%;
-  height: 1000px;
+
   background-image: url(/public/img/main_beach.jpg);
   background-size: cover; /* 핵심코드 */
   position: relative; /* 핵심코드 */
   display:flex;
   max-width: 100%;
   background-repeat :no-repeat;
-  
 }
-
-.banner-txt {
-  position: absolute; /* 핵심코드 */
-  top: 60%; /* 핵심코드 */
-  left: 25%; /* 핵심코드 */
-  transform: translate( -100%, -100%); /* 핵심코드 */
+.banner-txt2 {
+  margin-right: 90rem;
+  font-size: x-large;
   text-align: left;
-  vertical-align: middle;
   color: rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.5);
 }
-.banner2 {
+.main-4 {
   width: 700px;
   height: 1000px;
   background-image: url(/public/img/aa.jfif);
@@ -61,42 +72,16 @@ body{
   position: relative; /* 핵심코드 */
   display:flex;
 }
-.banner-txt2 {
-  position: relative; /* 핵심코드 */
-  top: 130%; /* 핵심코드 */
-  left: 250%; /* 핵심코드 */
-  transform: translate( -100%, -100%); /* 핵심코드 */
+.banner-txt3 {
+  font-size: x-large;
   text-align: left;
-  color: rgb(25, 0, 255);
-  
+  color: rgb(0, 0, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .divider {
+  width: 100%;
+  height: 5px;
+  background-color: gray;
+} */
