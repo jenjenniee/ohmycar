@@ -5,22 +5,39 @@
 body{
   font-family: 'nanumsquare';
 }
-.black-nav{
+.nav{
   background: rgb(255, 255, 255);
-  width: 100%;
   display: flex;
   color: rgb(57, 79, 153);
   padding: 20px;
   font-size: 20px;
   font-weight: 600;
 }
+.main{
+  height: 1000px;
+  background-image: url(/public/img/night_m3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-attachment: fixed; 스무스해짐 */
+  background-size: cover;
+  padding-top: 1px;
+}
+.main-txt{
+  color: aliceblue;
+  font-size: 50px;
+  margin-top: 20rem;
+  font-weight: 400;
+  line-height: 60%;
+  
+}
+
 .banner {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background-image: url(/public/img/main_beach.jpg);
   background-size: cover; /* 핵심코드 */
   position: relative; /* 핵심코드 */
-  display : inline-block;
+  display:flex;
   max-width: 100%;
   background-repeat :no-repeat;
   
@@ -37,12 +54,12 @@ body{
   background-color: rgba(255, 255, 255, 0.5);
 }
 .banner2 {
-  width: 800px;
-  height: 900px;
+  width: 700px;
+  height: 1000px;
   background-image: url(/public/img/aa.jfif);
   background-size: cover; /* 핵심코드 */
   position: relative; /* 핵심코드 */
-
+  display:flex;
 }
 .banner-txt2 {
   position: relative; /* 핵심코드 */
@@ -51,6 +68,7 @@ body{
   transform: translate( -100%, -100%); /* 핵심코드 */
   text-align: left;
   color: rgb(25, 0, 255);
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {

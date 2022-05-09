@@ -3,9 +3,16 @@ import './App.css';
 
 function App() {
   return (
+    
     <div className="App" meta name="viewport" content="width=device-width, initial-scale=1">
-      <div className='black-nav'>
+      <div className='nav'>
         <div>굥이 리액트 시작</div>
+      </div>
+      <div className= "main">
+      <div className="main-txt">
+     <h1> Oh! My Car</h1>
+     <h6>Let's travel with our Car</h6>
+      </div>
       </div>
       <div className= "banner"> 
           <div className="banner-txt">
