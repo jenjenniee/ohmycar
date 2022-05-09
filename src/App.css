@@ -63,8 +63,8 @@ body{
 }
 .banner-txt2 {
   position: relative; /* 핵심코드 */
-  top: 60%; /* 핵심코드 */
-  left: 100%; /* 핵심코드 */
+  top: 130%; /* 핵심코드 */
+  left: 250%; /* 핵심코드 */
   transform: translate( -100%, -100%); /* 핵심코드 */
   text-align: left;
   color: rgb(25, 0, 255);
