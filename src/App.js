@@ -18,6 +18,7 @@ function App() {
         // 스크롤 내릴 때
         if (scrollTop >= 0 && scrollTop < pageHeight) {
           //현재 1페이지
+
           console.log("현재 1페이지, down");
           outerDivRef.current.scrollTo({
             top: pageHeight + DIVIDER_HEIGHT,
@@ -102,6 +103,9 @@ function App() {
       </div> */}
 
       <div className="inner main-1">
+      <div>
+      <Login />
+      </div>
         <div className="main-txt">
         <h1> Oh! My Car</h1>
         <h6>Let's travel with our Car</h6>
