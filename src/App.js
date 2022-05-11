@@ -112,7 +112,6 @@ function App() {
         </div>
       
       </div>
-      
 
       <div className="inner main-2">
         <div className="banner-txt1">
