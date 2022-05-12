@@ -1,0 +1,57 @@
+.header{
+  width:100vw;
+  height:60px;
+  background:#333;
+  position:fixed;
+  display:flex;
+  .wrapper{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: space-between; /* 자식 엘리먼트 사이에 여백을 최대로 설정 */
+    align-items: center;
+    .wrapper_left{
+      display:flex;
+      height:100%;
+      align-items: center;
+      .logo{
+        width:150px;
+        height:100%;
+        text-align: center;
+        font-size:40px;
+        font-weight: 700;
+        font-family: 'Alata', sans-serif;
+        text-align: center;
+        color:white;
+        cursor:pointer;
+      }
+      .menu{
+        display:flex;
+        font-size:25px;
+        color:white;
+        margin-left:50px;
+        .menu_item{
+          margin-right:15px;
+          cursor:pointer;
+        }
+      }
+    }
+    .wrapper_right{
+      display:flex;
+      align-items: center;
+      margin-right:50px;
+      .icon{
+        margin-top:-5px;
+        color:white;
+        font-size:35px;
+        height:35px;
+      }
+      .button{
+        color:white;
+        font-size:20px;
+        margin-right:10px;
+        cursor:pointer;
+      }
+    }
+  }
+}
