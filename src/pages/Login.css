@@ -1,5 +1,6 @@
 .login-body {
-  height: 100%;
+  height: 889px;
+  font-family: Arial;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,34 +9,53 @@
           align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../img/landscape-g467b0ad9b_1920.jpg");
+  background-repeat: no-repeat;
 }
 
-.login-body .form-signin {
+.form-login {
   background-color: #fff;
   border-radius: 25;
-  width: 100%;
-  max-width: 330px;
+  width: 500px;
+  max-width: 350px;
   padding: 15px;
   margin: auto;
 }
 
-.login-body .form-signin .form-signin .checkbox {
-  font-weight: 400;
+.form-login input[type="email"] {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #d5d5d5;
+  border-radius: 0;
+  font-size: 14px;
 }
 
-.login-body .form-signin .form-signin .checkbox .form-signin .form-floating:focus-within {
-  z-index: 2;
+.form-login input[type="password"] {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  border: 1px solid #d5d5d5;
+  border-radius: 0;
+  font-size: 14px;
 }
 
-.login-body .form-signin .form-signin .checkbox .form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-radius: 10px;
+.checkbox {
+  color: #000000;
 }
 
-.login-body .form-signin .form-signin .checkbox .form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.submit {
+  width: 140px;
+  height: 50px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 0 40px 50px;
 }
 /*# sourceMappingURL=Login.css.map */

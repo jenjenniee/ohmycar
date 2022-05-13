@@ -2,9 +2,10 @@ import React from 'react';
 import './Header.scss';
 import { BsPersonCircle } from "react-icons/bs"
 
-const Header = ({ user }) => {
+const Header = ({ url }) => {
+  console.log(url)
   return (
-    <div className="header">
+    <div className={'header ' + (url !== "http://localhost:3000/" ? 'header_background' : '')}>
       <div className="wrapper">
         <div className="wrapper_left">
           <div className="logo">OMC</div>
@@ -15,7 +16,7 @@ const Header = ({ user }) => {
           </div>
         </div>
         <div className="wrapper_right">
-          <div className="button" onClick={()=> window.location.href="/Login"}>로그인</div>
+        <div className="button" onClick={()=> window.location.href="/Login"}>로그인</div>
           <div className="icon"><BsPersonCircle /></div>
         </div>
       </div>

@@ -4,9 +4,9 @@ import './Login.scss';
 function Login() {
   return (
         <div className="login-body">
-           <main className="form-signin">
-              <form action="/login.do" method="post">
-                 <h1 className="h3 mb-3 fw-normal">Login</h1>
+           <main className="form-login">
+              <form action="/어디로갈래" method="post">
+                 <h1>Login</h1>
                  <div className="form-floating">
                     <input
                        name="id"
@@ -36,11 +36,12 @@ function Login() {
                     </label>
                  </div>
                  <button
-                    className="w-100 btn btn-lg btn-primary"
-                    type="submit"
+                    className="submit"
+                    type="submit" onClick={()=> window.location.href="/Main"}
                  >
-                    Sign in
+                    LOGIN
                  </button>
+                 
               </form>
            </main>
         </div>
