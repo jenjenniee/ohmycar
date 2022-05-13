@@ -1,0 +1,85 @@
+@charset "UTF-8";
+.header {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* 자식 엘리먼트 사이에 여백을 최대로 설정 */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .wrapper .wrapper_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .wrapper .wrapper_left .logo {
+  width: 150px;
+  height: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  font-family: 'Alata', sans-serif;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.header .wrapper .wrapper_left .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 25px;
+  color: white;
+  margin-left: 50px;
+}
+
+.header .wrapper .wrapper_left .menu .menu_item {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.header .wrapper .wrapper_right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+
+.header .wrapper .wrapper_right .icon {
+  margin-top: -5px;
+  color: white;
+  font-size: 35px;
+  height: 35px;
+}
+
+.header .wrapper .wrapper_right .button {
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Header.css.map */

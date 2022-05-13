@@ -15,7 +15,7 @@ const Header = ({ user }) => {
           </div>
         </div>
         <div className="wrapper_right">
-          <div className="button">로그인</div>
+          <div className="button" onClick={()=> window.location.href="/Login"}>로그인</div>
           <div className="icon"><BsPersonCircle /></div>
         </div>
       </div>

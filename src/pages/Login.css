@@ -1,0 +1,41 @@
+.login-body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-body .form-signin {
+  background-color: #fff;
+  border-radius: 25;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.login-body .form-signin .form-signin .checkbox {
+  font-weight: 400;
+}
+
+.login-body .form-signin .form-signin .checkbox .form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.login-body .form-signin .form-signin .checkbox .form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-radius: 10px;
+}
+
+.login-body .form-signin .form-signin .checkbox .form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/*# sourceMappingURL=Login.css.map */
