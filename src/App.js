@@ -6,9 +6,10 @@ import Register from './pages/Register';
 import Main from './pages/Main';
 
 function App() {
+  const url = window.location.href
   return (
     <div className="App">
-      <Header />
+      <Header url={`${url}`} />
       <Router>
         <Routes>
           <Route exact path="/" element={<Main/>} />
