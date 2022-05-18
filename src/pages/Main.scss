@@ -1,4 +1,3 @@
-
 .container{
   width:100vw;
   height:100vh;
@@ -11,25 +10,148 @@
       height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: center;    }
+      flex-direction: column;
+      align-items: center;    
+    }
     .bg_1{
       background-size:100vw 100vh;
       background-image: url("../img/landscape-g467b0ad9b_1920.jpg");
-      .title{
-        font-size: 120px;
-        font-weight:700;
-        color:white;
+      .content{
+        display: flex;
+        height:700px;
+        flex-direction: column;
+        align-items: center;  
+        margin-top:250px;
+        .search{
+          width:900px;
+          height:50px;
+          background:white;
+          border-radius: 30px;
+          display:flex;
+          align-items: center;  
+          justify-content: center;
+          input{
+            width:800px;
+            height:35px;
+            border:none;
+            outline: none;
+            border-radius: 25px;
+            font-size: 20px;
+          }
+          .icon{
+            margin-top:5px;
+            font-size:30px;
+            cursor: pointer;
+          }
+        }
+        .title{
+          margin-bottom:20px;
+          font-size: 140px;
+          font-weight:700;
+          color:white;
+          p{
+            margin:0;
+          }
+        }
+        .sub_title{
+          color:white;
+          font-size:30px;
+          p{
+            margin:0;
+          }
+        }
       }
     }
     .bg_2{
-      background-color: #b6d8f2;
+      background-size:100vw 100vh;
+      background-image: url(../img/utah-g543009de6_1920.jpg);
+        .content{
+          width:1920px;
+          height:100vh;
+          .title{
+            display: flex;
+            flex-direction: column;
+            height:100px;
+            color:white;
+            margin-top:100px;
+            margin-left:430px;
+            margin-bottom:30px;
+            p{
+              font-size: 40px;
+              margin:0;
+              margin-right:20px;
+            }
+            .button{
+              width:150px;
+              height:30px;
+              border-radius: 20px;
+              display:flex;
+              margin-top:5px;
+              color:white;
+              font-size: 20px;
+              margin-left:-5px;
+              cursor: pointer;
+              p{
+                display: block;
+                font-size: 20px;
+                margin:0;
+                margin-right: 10px;
+                margin-left:7px;
+              }
+              .icon{
+                margin-top:2px;
+              }
+            }
+          }
+          .swiper{
+            width:1500px;
+            height:650px;
+            .swiper_div{
+              margin-top:30px;
+              transition: .4s;
+              cursor: pointer;
+              border-radius: 25px;
+              width:466px;
+              height:600px;
+              background:white;
+              box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+              .image{
+                width:466px;
+                height:450px;
+                background-color: blue;
+                border-radius: 25px 25px 0 0;
+              }
+              .cardTitle{
+                width:466px;
+                font-size:25px;
+                font-weight: 700;
+                color:#424242;
+                margin:0;
+                margin-top:5px;
+                margin-left:15px;
+              }
+              .tag{
+
+              }
+              .place{
+
+              }
+            }
+            .swiper_div:hover{
+              margin-top:0px;
+              transition: .4s;
+            }
+          }
+        }
     }
     .bg_3{
-      background-color: #f4cfdf;
+      background-size:100vw 100vh;
+      background-image: url(../img/trees-gc20135b1a_1920.jpg);
     }
     .bg_4{
       background-size:100vw 100vh;
-      background-image: url("../img/pexels-lachlan-ross-5967953.jpg");
+      background-image: url(../img/barn-gc2cd1319e_1920.jpg);
+
     }
     .divider {
       width: 100%;
@@ -39,5 +161,139 @@
   }
   .outer::-webkit-scrollbar {
     display: none;
+  }
+}
+.swiper-button-next{
+  color: white !important;
+}
+
+.swiper-button-prev {
+    color: white !important;
+}
+@media screen and (max-width: 1100px) {
+  .container{
+    width:100vw;
+    height:100vh;
+    overflow-y: hidden;
+    margin:0;
+    .outer{
+      height: 100vh;
+      overflow-y: auto;
+      .inner {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;    
+      }
+      .bg_1{
+        background-size:100vw 100vh;
+        background-image: url("../img/landscape-g467b0ad9b_1920.jpg");
+        .content{
+          display: flex;
+          height:700px;
+          flex-direction: column;
+          align-items: center;  
+          margin-top:250px;
+          .search{
+            width:900px;
+            height:50px;
+            background:white;
+            border-radius: 30px;
+            display:flex;
+            align-items: center;  
+            justify-content: center;
+            input{
+              width:800px;
+              height:35px;
+              border:none;
+              outline: none;
+              border-radius: 25px;
+              font-size: 20px;
+            }
+            .icon{
+              margin-top:5px;
+              font-size:30px;
+              cursor: pointer;
+            }
+          }
+          .title{
+            margin-bottom:20px;
+            font-size: 140px;
+            font-weight:700;
+            color:white;
+            p{
+              margin:0;
+            }
+          }
+          .sub_title{
+            color:white;
+            font-size:30px;
+            p{
+              margin:0;
+            }
+          }
+        }
+      }
+      .bg_2{
+        background-size:100vw 100vh;
+        background-image: url(../img/utah-g543009de6_1920.jpg);
+        .content{
+          width:1920px;
+          height:100vh;
+          .title{
+            display: flex;
+            color:white;
+            height:100px;
+            margin-top:100px;
+            margin-left:600px;
+            p{
+              font-size: 40px;
+              margin:0;
+              display: block;
+            }
+            .button{
+              width:150px;
+              height:30px;
+              border-radius: 20px;
+              display:flex;
+              margin-top:5px;
+              color:white;
+              font-size: 20px;
+              margin-left:-5px;
+              cursor: pointer;
+              p{
+                display: block;
+                font-size: 20px;
+                margin:0;
+                margin-right: 10px;
+                margin-left:7px;
+              }
+              .icon{
+                margin-top:2px;
+              }
+            }
+            
+          }
+        }
+      }
+      .bg_3{
+        background-size:100vw 100vh;
+        background-image: url(../img/trees-gc20135b1a_1920.jpg);
+      }
+      .bg_4{
+        background-size:100vw 100vh;
+        background-image: url(../img/barn-gc2cd1319e_1920.jpg);
+
+      }
+      .divider {
+        width: 100%;
+        height: 5px;
+        background-color: gray;
+      }
+    }
+    .outer::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
