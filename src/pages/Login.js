@@ -41,7 +41,6 @@ function Login() {
                  >
                     LOGIN
                  </button>
-                 
               </form>
            </main>
         </div>
