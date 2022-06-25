@@ -1,7 +1,6 @@
 import React,{ useEffect, useRef, useState } from 'react';
 import './Main.scss';
-import Dots from "./Dots";
-import { BsSearch } from "react-icons/bs"
+import { BsSearch, BsFillGeoAltFill, BsTagsFill, BsChevronDoubleLeft } from "react-icons/bs"
 import { Autoplay,Navigation, Pagination, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import image1 from '../img/travel-g61fc92606_1920.jpg'
@@ -14,6 +13,8 @@ import image6 from '../img/utah-g543009de6_1920.jpg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
+
 
 const SwiperComponent =  () => {
   return (
@@ -37,49 +38,85 @@ const SwiperComponent =  () => {
       <SwiperSlide>
         <div className='swiper_div'>
           <img className='image' src={image1} alt="image1"></img>
-          <div className="cardTitle">산과 바다와 연인과 함께</div>
-          <div className="tag"></div>
-          <div className="place"></div>
+          <div className="cardTitle">청주대학교 중앙도서관</div>
+          <div className="tag">
+            <div className="icon"><BsTagsFill /></div>
+            <div className="text">#종강 #졸업작품 #야경</div>
+          </div>
+          <div className="place">
+            <div className="icon"><BsFillGeoAltFill /></div>
+            <div className="text">충청북도 청주시 청주대학교</div>
+          </div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='swiper_div'>
           <img className='image' src={image2} alt="image2"></img>
-          <div className="cardTitle">산과 바다와 연인과 함께</div>
-          <div className="tag"></div>
-          <div className="place"></div>
+          <div className="cardTitle">청주대학교 중앙도서관</div>
+          <div className="tag">
+            <div className="icon"><BsTagsFill /></div>
+            <div className="text">#종강 #졸업작품 #야경</div>
+          </div>
+          <div className="place">
+            <div className="icon"><BsFillGeoAltFill /></div>
+            <div className="text">충청북도 청주시 청주대학교</div>
+          </div>
         </div>
       </SwiperSlide>  
       <SwiperSlide>
         <div className='swiper_div'>
           <img className='image' src={image3} alt="image3"></img>
-          <div className="cardTitle">산과 바다와 연인과 함께</div>
-          <div className="tag"></div>
-          <div className="place"></div>
+          <div className="cardTitle">청주대학교 중앙도서관</div>
+          <div className="tag">
+            <div className="icon"><BsTagsFill /></div>
+            <div className="text">#종강 #졸업작품 #야경</div>
+          </div>
+          <div className="place">
+            <div className="icon"><BsFillGeoAltFill /></div>
+            <div className="text">충청북도 청주시 청주대학교</div>
+          </div>
         </div>      
       </SwiperSlide>
       <SwiperSlide>
         <div className='swiper_div'>
           <img className='image' src={image4} alt="image4"></img>
-          <div className="cardTitle">산과 바다와 연인과 함께</div>
-          <div className="tag"></div>
-          <div className="place"></div>
+          <div className="cardTitle">청주대학교 중앙도서관</div>
+          <div className="tag">
+            <div className="icon"><BsTagsFill /></div>
+            <div className="text">#종강 #졸업작품 #야경</div>
+          </div>
+          <div className="place">
+            <div className="icon"><BsFillGeoAltFill /></div>
+            <div className="text">충청북도 청주시 청주대학교</div>
+          </div>
         </div>      
       </SwiperSlide>
       <SwiperSlide>
         <div className='swiper_div'>
           <img className='image' src={image5} alt="image5"></img>
-          <div className="cardTitle">산과 바다와 연인과 함께</div>
-          <div className="tag"></div>
-          <div className="place"></div>
+          <div className="cardTitle">청주대학교 중앙도서관</div>
+          <div className="tag">
+            <div className="icon"><BsTagsFill /></div>
+            <div className="text">#종강 #졸업작품 #야경</div>
+          </div>
+          <div className="place">
+            <div className="icon"><BsFillGeoAltFill /></div>
+            <div className="text">충청북도 청주시 청주대학교</div>
+          </div>
         </div>      
       </SwiperSlide>
       <SwiperSlide>
         <div className='swiper_div'>
           <img className='image' src={image6} alt="image6"></img>
-          <div className="cardTitle">산과 바다와 연인과 함께</div>
-          <div className="tag"></div>
-          <div className="place"></div>
+          <div className="cardTitle">청주대학교 중앙도서관</div>
+          <div className="tag">
+            <div className="icon"><BsTagsFill /></div>
+            <div className="text">#종강 #졸업작품 #야경</div>
+          </div>
+          <div className="place">
+            <div className="icon"><BsFillGeoAltFill /></div>
+            <div className="text">충청북도 청주시 청주대학교</div>
+          </div>
         </div>      
       </SwiperSlide>    
       
@@ -191,7 +228,6 @@ const Main = () => {
   return (
     <div className='container'>
       <div ref={outerDivRef} className="outer">
-        <Dots scrollIndex={scrollIndex} />
         <div className="inner bg_1">
           <div className="content">
             <div className="search">
@@ -202,10 +238,8 @@ const Main = () => {
             <div className="sub_title"><p>Let`s travel with my Car</p></div>
           </div>
         </div>
-        <div className="divider"></div>
-
+        <div className="divider" />
         <div className="inner bg_2">
-
           <div className="content">
             <div className="title">
               <p>이런 여행지는 어떠세요?</p>
@@ -223,9 +257,25 @@ const Main = () => {
 
         </div>
         <div className="divider"></div>
-        <div className="inner bg_3">3</div>
+        <div className="inner bg_3">
+          <div className="content">
+            <div className="title">나만보기 아까운 PLACE!<br/>함께 공유하세요.</div>
+            <div className="button">
+              <div className="icon"><BsChevronDoubleLeft /></div>
+              <p>OMC community</p>
+            </div>        
+          </div>
+        </div>
         <div className="divider"></div>
-        <div className="inner bg_4">4</div>
+        <div className="inner bg_4">
+        <div className="content">
+            <div className="title">당신의 장소에 사람들을 초대해보세요!<br/>OMC가 도와드리겠습니다.</div>
+            <div className="button">
+              <div className="icon"><BsChevronDoubleLeft /></div>
+              <p>OMC Host 되기</p>
+            </div>        
+          </div>
+        </div>
 
       </div>
     </div>
